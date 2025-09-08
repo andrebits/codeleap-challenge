@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+webapp/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -14,8 +15,8 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+webapp/.next/
+webapp/out/
 
 # production
 /build
@@ -38,4 +39,15 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+webapp/next-env.d.ts
+
+
+# Python cache
+**/__pycache__/
+
+# Django collectstatic
+**/staticfiles/
+
+# Django migrations (opcional)
+**/migrations/*.py
+!**/migrations/__init__.py
