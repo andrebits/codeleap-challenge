@@ -28,7 +28,13 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://dev.codeleap.co.uk/careers/"]
+ALLOWED_HOSTS = [
+    "https://dev.codeleap.co.uk/careers/", 
+    "http://api",  
+    "api",
+    "nginx",
+    "69.62.89.87"
+    ]
 
 
 # Application definition
