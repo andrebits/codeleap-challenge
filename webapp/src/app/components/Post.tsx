@@ -18,7 +18,7 @@ export default function Post({post, setDeleteModalIsOpen, setEditModalIsOpen}: P
     return (
         <div className="">
             <div  className="flex justify-between text-2xl border rounded-t-xl rounded-b-none font-bold bg-indigo-400 border-indigo-400/90 text-white p-5 mx-5">
-                <h1>{post.title}</h1>
+                <h1 className="max-w-[75%]">{post.title}</h1>
                 {post.username === username && (
                     <div className="flex justify-between text-gray-500 pb-1">
                         <Link href="#" className="mr-2" onClick={()=>setDeleteModalIsOpen(true)}>
