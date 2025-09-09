@@ -52,4 +52,3 @@ webapp/next-env.d.ts
 **/migrations/*.py
 !**/migrations/__init__.py
 
-docker-compose-prod.yml
